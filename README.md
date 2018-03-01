@@ -1,34 +1,27 @@
-# vue-apollo-base
+# Vue, Apollo, & GraphQL All Preconfigured with a Node Server
 
 > A project composed of Vue.js, Apollo, and graphQL.
 
 ## Installation
 
 # Setup Vue
+Install vue-cli if you have not already. Then create a standard vue project.
 ``` bash
-# install vue-cli
-$ npm install --global vue-cli
-
-# create a new project using the "webpack" template
-$ vue init webpack my-project
-
-# install dependencies and go!
-$ cd my-project
-$ npm install
-
-# serve with hot reload at localhost:8080
-$ npm run dev
+vue init webpack my-project
+cd my-project
+npm install
+npm run dev
 ```
 # Setup Apollo & GraphQL
+Install the server side packages.
 ``` bash
-# Install server side packages
-$ npm install apollo-boost apollo-server-express vue-apollo graphql graphql-tools cors
+npm install apollo-boost apollo-server-express vue-apollo graphql graphql-tools cors
+```
+Cors which is used in server.js solved a 405 connection issue that I was having. The remainder of the code comes directly from [graphql.org] (http://graphql.org/code/#javascript). 
 
-# Cors which is used in server.js solved a 405 connection issue that I was having
-```
 # Run Server
+Open a second terminal and startup the server
 ``` bash
-#Open a second terminal and startup the server
-$ node server.js
+node server.js
 ```
-You should now see "Hello World" which is being populated by the apollo server using graphQL
+You should now see "Hello World" which is being populated by the apollo server using graphQL.
