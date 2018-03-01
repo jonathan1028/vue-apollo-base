@@ -4,25 +4,31 @@
 
 ## Installation
 
-#Setup Vue
+# Setup Vue
 ``` bash
 # install vue-cli
 $ npm install --global vue-cli
+
 # create a new project using the "webpack" template
 $ vue init webpack my-project
+
 # install dependencies and go!
 $ cd my-project
 $ npm install
+
 # serve with hot reload at localhost:8080
 $ npm run dev
 ```
-#Setup Apollo & GraphQL
+# Setup Apollo & GraphQL
 ``` bash
-#Cors which is used in server.js solved a 405 connection issue that I was having 
+# Install server side packages
 $ npm install apollo-boost apollo-server-express vue-apollo graphql graphql-tools cors
+
+# Cors which is used in server.js solved a 405 connection issue that I was having
+```
+# Run Server
+``` bash
 #Open a second terminal and startup the server
 $ node server.js
-
-# You should now see "Hello World" which is being populated by the apollo server using graphQL
 ```
-
+You should now see "Hello World" which is being populated by the apollo server using graphQL
