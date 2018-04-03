@@ -1,20 +1,20 @@
 <template>
   <div id="app">
-    <h1>Vue & Apollo Test</h1>
-    <h3>Static Links</h3>
+    <h1>Vue & Apollo Base</h1>
+    <!-- <h3>Static Links</h3>
     <static-link-list></static-link-list>
     <h3>Dynamic Links
     </h3>
-    <link-list></link-list>
-    <div>{{test}}</div>
+    <link-list></link-list> -->
+    <h3>If the server is connected properly: 'Hello from server' should show below:</h3>
     <div>{{hello}}</div>
 
   </div>
 </template>
 
 <script>
-import LinkList from './components/LinkList'
-import StaticLinkList from './components/StaticLinkList'
+// import LinkList from './components/LinkList'
+// import StaticLinkList from './components/StaticLinkList'
 import gql from 'graphql-tag'
 
 // const HELLO_QUERY = gql`{hello}`
@@ -23,7 +23,7 @@ import gql from 'graphql-tag'
 export default {
   name: 'app',
   components: {
-    LinkList, StaticLinkList
+    // LinkList, StaticLinkList
   },
   data () {
     return {

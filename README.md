@@ -13,7 +13,7 @@ npm run dev
 ## Setup Apollo & GraphQL
 Install the server side packages.
 ``` bash
-npm install apollo-boost apollo-server-express vue-apollo graphql graphql-tools cors
+npm install apollo-boost apollo-server-express vue-apollo graphql graphql-tools cors apollo-link-ws subscriptions-transport-ws
 ```
 Cors which is used in server.js solved a 405 connection issue that I was having. The remainder of the code comes directly from: http://graphql.org/code/#javascript. 
 

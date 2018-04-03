@@ -17,7 +17,7 @@ schema {
 var resolvers = {
   Query: {
     hello(root) {
-      return 'Hello World 2!';
+      return 'Hello from server!';
     }
   }
 };
